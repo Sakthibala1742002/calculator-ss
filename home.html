@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<head>
+<title>
+</title>
+<link rel="stylesheet" type="text/css" href="css/calstyle.css" />
+</head>
+<body>
+<div id="container">
+      <h1><center>CALCULATOR</center></h1>
+
+            <div class="wrapper">
+                  <div class="wrapper_left">
+                     <ul>
+                        
+                       <li data-li="SCAL" class="active">
+                       <p>SIMPLE CALCULATOR</p>
+                        </li>
+
+                        <li data-li="ALG1" >
+                         <p>(a+b)^2</p>
+                          </li>
+
+                         <li data-li="ALG2">
+                         <p>(a-b)^2</p>
+                          </li>
+						  
+                        
+                          <li data-li="ALG3">
+                            <p>(a+b)(a-b)</p>
+                             </li>
+
+                             <li data-li="ALG4">
+                                <p>(a+b)^3</p>
+                                 </li>
+
+                                 <li data-li="ALG5">
+                                    <p>(a-b)^3</p>
+                                     </li>
+
+                          </ul>
+                     </div>
+            <div class="wrapper_right">
+                  <div class="item SCAL">	
+                        <link rel="stylesheet" href="css/cal.css">	
+                        <table class="calculator" >
+                              <tr>
+                                <td colspan="3"> <input class="display-box" type="text" id="result" disabled /> </td>
+                                <td> <input type="button" value="C" onclick="clearScreen()" id="btn" /> </td>
+                              </tr>
+                              <tr>
+                                <td> <input type="button" value="7" onclick="display('7')" /> </td>
+                                <td> <input type="button" value="8" onclick="display('8')" /> </td>
+                                <td> <input type="button" value="9" onclick="display('9')" /> </td>
+                                <td> <input type="button" value="+" onclick="display('  +  ')" /> </td>
+                              </tr>
+                              <tr>
+                                <td> <input type="button" value="4" onclick="display('4')" /> </td>
+                                <td> <input type="button" value="5" onclick="display('5')" /> </td>
+                                <td> <input type="button" value="6" onclick="display('6')" /> </td>
+                                <td> <input type="button" value="-" onclick="display('  -  ')" /> </td>
+                              </tr>
+                              <tr>
+                                <td> <input type="button" value="1" onclick="display('1')" /> </td>
+                                <td> <input type="button" value="2" onclick="display('2')" /> </td>
+                                <td> <input type="button" value="3" onclick="display('3')" /> </td>
+                                <td> <input type="button" value="*" onclick="display('  *  ')" /> </td>
+                              </tr>
+                              <tr>
+                                <td> <input type="button" value="0" onclick="display('0')" /> </td>
+                                <td> <input type="button" value="." onclick="display('.')" /> </td>
+                             
+                                <!-- calculate() function evaluates the mathematical expression -->
+                                <td> <input type="button" value="=" onclick="calculate()" id="btn" /> </td>
+                                <td> <input type="button" value="/" onclick="display('/')" /> </td>
+                              </tr>
+                            </table>
+                            <script type="text/javascript" src="cal.js"></script>							 
+                  </div>
+
+                  <div class="item ALG1" style="display: none;">	
+                        <div class="result">
+                              <table>
+                              <tr>
+                              <th><label for="fname">Enter the value of A:</label></th>
+                              <th><input type="text" id="avalue" name="avalue" onfocus="this.value=''" value="VALUE A"></th></tr>
+                              <tr>
+                                    <th><label for="lname">Enter the value of B:</label></th>
+                              <th> <input type="text" id="bvalue" name="bvalue" onfocus="this.value=''" value="VALUE B"></th></tr>
+                             </table>
+                             <center>
+                             
+                              <button onclick="myFunction()" class="sbut">Solve it</button>
+                              <hr>
+                              <script src="alg1.js"></script>	
+                                    <p id="solution1"></p>
+                                    <p id="step1"></p>			
+                                    <p id="step2"></p>
+                                    <p id="step3"></p>
+                                    <p id="step4"></p>
+                                    <p id="step5"></p>
+                              </center>
+                              
+                        </div>					 
+                  </div>
+                  
+                  <div class="item ALG2" style="display: none;">	
+                        <div class="result">
+                              <table>
+                              <tr>
+                              <th><label for="fname">Enter the value of A:</label></th>
+                              <th><input type="text" id="cvalue" name="avalue" onfocus="this.value=''" value="VALUE A"></th></tr>
+                              <tr>
+                                    <th><label for="lname">Enter the value of B:</label></th>
+                              <th> <input type="text" id="dvalue" name="bvalue" onfocus="this.value=''" value="VALUE B"></th></tr>
+                             </table>
+                             <center>
+                             
+                              <button onclick="myFunction1()" class="sbut">Solve it</button>
+                              <hr>
+                              <script src="alg2.js"></script>	
+                                    <p id="solution2"></p>
+                                    <p id="step11"></p>			
+                                    <p id="step12"></p>
+                                    <p id="step13"></p>
+                                    <p id="step14"></p>
+                                    <p id="step15"></p>
+                              </center>
+                              
+                        </div>							 
+                  </div>
+
+
+                  <div class="item ALG3" style="display: none;">	
+                        <div class="result">
+                              <table>
+                              <tr>
+                              <th><label for="fname">Enter the value of A:</label></th>
+                              <th><input type="text" id="evalue" name="evalue" onfocus="this.value=''" value="VALUE A"></th></tr>
+                              <tr>
+                                    <th><label for="lname">Enter the value of B:</label></th>
+                              <th> <input type="text" id="fvalue" name="fvalue" onfocus="this.value=''" value="VALUE B"></th></tr>
+                             </table>
+                             <center>
+                             
+                              <button onclick="myFunction2()" class = "sbut">Solve it</button>
+                              <hr>
+                              <script src="alg3.js"></script>	
+                                    <p id="solution3"></p>
+                                    <p id="step21"></p>			
+                                    <p id="step22"></p>
+                                    <p id="step23"></p>
+                                    <p id="step24"></p>
+                                    <p id="step25"></p>
+                              </center>
+                        </div>								 
+                  </div>
+                  <div class="item ALG4" style="display: none;">
+                        <div class="result">
+                              <table>
+                              <tr>
+                              <th><label for="fname">Enter the value of A:</label></th>
+                              <th><input type="text" id="gvalue" name="gvalue" onfocus="this.value=''" value="VALUE A"></th></tr>
+                              <tr>
+                                    <th><label for="lname">Enter the value of B:</label></th>
+                              <th> <input type="text" id="hvalue" name="hvalue" onfocus="this.value=''" value="VALUE B"></th></tr>
+                             </table>
+                             <center>
+                             
+                              <button onclick="myFunction3()" class = "sbut">Solve it</button>
+                              <hr>
+                              <script src="alg4.js"></script>	
+                                    <p id="solution4"></p>
+                                    <p id="step31"></p>			
+                                    <p id="step32"></p>
+                                    <p id="step33"></p>
+                                    <p id="step34"></p>
+                                    <p id="step35"></p>
+                              </center>
+                        </div>								 
+                  </div>
+                  <div class="item ALG5" style="display: none;">	
+                        <div class="result">
+                              <table>
+                              <tr>
+                              <th><label for="fname">Enter the value of A:</label></th>
+                              <th><input type="text" id="ivalue" name="ivalue" onfocus="this.value=''" value="VALUE A"></th></tr>
+                              <tr>
+                                    <th><label for="lname">Enter the value of B:</label></th>
+                              <th> <input type="text" id="jvalue" name="jvalue" onfocus="this.value=''" value="VALUE B"></th></tr>
+                             </table>
+                             
+                             <center>
+                             
+                              <button onclick="myFunction4()" class = "sbut">Solve it</button>
+                              <hr>
+                              <script src="alg5.js"></script>	
+                                    <p id="solution5"></p>
+                                    <p id="step41"></p>			
+                                    <p id="step42"></p>
+                                    <p id="step43"></p>
+                                    <p id="step44"></p>
+                                    <p id="step45"></p>
+                              </center>
+                        </div>								 
+                  </div>
+                  
+            </div>
+      </div>
+ </div>
+      <script src="home.js"></script>
+</body>
+</html>

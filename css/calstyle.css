@@ -1,0 +1,131 @@
+body
+{
+    margin: 0%;
+    padding: 0%;
+    background-color: transparent;
+    width: auto;
+    height: auto;
+}
+
+#container
+{
+    width: 100%;
+    background-color: #2d187a;
+	height:auto;
+    overflow: auto;
+}
+#container h1
+{
+  
+	color:#dfdfdf;
+	font-size:50px;
+	margin-top:10px;
+}
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../calculation.jpg");
+  
+  background-size: cover;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  margin-top:50px;
+}
+
+.wrapper .wrapper_left {
+  width: 250px;
+ background-color: #2d128d;
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+ 
+}
+
+.wrapper .wrapper_left ul li {
+  background: #313142;
+  margin-bottom: 15px;
+  padding: 12px 25px;
+  text-transform: uppercase;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  width: 150px;
+  border-radius:30px;
+  letter-spacing: 2px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  height: 45px;
+}
+
+.wrapper .wrapper_left ul li p {
+  color: #00ff00;
+  position: relative;
+}
+
+.wrapper .wrapper_left ul li:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: #aaed0e;
+  background: linear-gradient(
+    126deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(123, 90, 231, 1) 0%,
+    rgba(88, 54, 206, 1) 100%
+  );
+  border-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  transition: all 0.4s ease;
+}
+
+.wrapper .wrapper_left ul li.active {
+  width: 180px;
+}
+.wrapper .wrapper_left ul li.active p {
+  color: #ffff00;
+}
+.wrapper .wrapper_left ul li.active:before {
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+.wrapper .wrapper_left ul li:last-child {
+  margin-bottom: 0;
+}
+.wrapper .wrapper_right {
+  
+  width: 100%;
+  padding: 30px 50px;
+  background: rgba(116, 114, 114, 0.9);
+}
+
+.result
+{
+  color: #f8fcf8;
+  font-size: 20px;
+}
+.result center
+{
+  width: 100%;
+  margin-right: 250px;
+}
+.sbut
+{
+  width:100px;
+  height:30px;
+  font-size: 15px;
+  border-radius: 30%;
+}
+
+.result table
+{
+margin-left: 200px;
+}
+	
